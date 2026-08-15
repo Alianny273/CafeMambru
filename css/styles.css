@@ -1,0 +1,633 @@
+/* Variables de la nueva identidad "Soft Neo-Brutalism" */
+:root {
+    --primary: #E2725B; /* Terracota Mambrú */
+    --primary-dark: #c95d46;
+    --secondary: #2C5545; /* Verde orgánico profundo */
+    --accent: #F4A261; /* Naranja cálido */
+    --bg-color: #F7F3EE; /* Crema moderno y limpio */
+    --card-bg: #FFFFFF;
+    --text-dark: #1C1917; /* Casi negro, más suave a la vista */
+    --container-width: 1200px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Combinación de tipografías trendy */
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-dark);
+}
+
+/* --- Navegación Flotante y Moderna --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4%;
+    background-color: rgba(247, 243, 238, 0.9);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--text-dark);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--text-dark);
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin: 0 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Botón estilo píldora con sombra brutalista suave */
+.btn-cart {
+    background: var(--card-bg);
+    border: var(--border-brutalist);
+    padding: 10px 22px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--primary);
+    transition: var(--transition-smooth);
+}
+
+.btn-cart:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--primary);
+    background-color: var(--primary);
+    color: white;
+}
+
+/* --- Sección Hero WOW --- */
+.hero {
+    position: relative;
+    background-image: url('../img/banner.jpeg   ');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px 2rem 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(28, 25, 23, 0.123), rgba(28, 25, 23, 0.233));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 5.5rem); /* Texto responsivo gigante */
+    color: #FFF3E3;
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
+    text-shadow: 3px 3px 0px var(--primary), 6px 6px 0px var(--secondary);
+}
+
+.hero-title span {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 18px 45px;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 2px solid var(--text-dark);
+    border-radius: 50px;
+    box-shadow: 6px 6px 0px var(--text-dark);
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px var(--text-dark);
+    background-color: var(--primary-dark);
+}
+
+/* --- Marquesina (Texto infinito) --- */
+.marquee-container {
+    background-color: var(--secondary);
+    color: white;
+    padding: 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 2px solid var(--text-dark);
+    border-top: 2px solid var(--text-dark);
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.marquee-content span {
+    margin: 0 30px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* --- Tienda / Productos --- */
+.shop {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+/* Tarjetas Redondeadas y Parchadas */
+.card {
+    background: var(--card-bg);
+    border: 2px solid var(--text-dark);
+    border-radius: 24px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px rgba(226, 114, 91, 0.3); /* Sombra terracota suave */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 12px 12px 0px var(--primary);
+}
+
+.img-container {
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid var(--text-dark);
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .img-container img {
+    transform: scale(1.08);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 2px solid var(--text-dark);
+    color: var(--text-dark);
+    background: white;
+}
+
+.badge-orange { background-color: var(--accent); }
+.badge-blue { background-color: #A8DADC; }
+.badge-dark { background-color: #E5E5E5; }
+
+.card-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.origin {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.notes {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px dashed #ddd;
+    padding-top: 1.5rem;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.btn-add {
+    background-color: var(--primary);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--text-dark);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px var(--text-dark);
+    transition: all 0.2s ease;
+}
+
+.btn-add:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px var(--text-dark);
+    background-color: var(--secondary);
+}
+
+/* --- Guía de Preparación --- */
+.prep-guide {
+    background-color: var(--secondary);
+    color: white;
+    padding: 6rem 2rem;
+    border-top: 2px solid var(--text-dark);
+    border-bottom: 2px solid var(--text-dark);
+}
+
+.guide-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+}
+
+.guide-text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.guide-text h2 {
+    font-size: 3.5rem;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.guide-text h2 span {
+    color: var(--accent);
+    font-style: italic;
+}
+
+.guide-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.steps {
+    list-style: none;
+}
+
+.steps li {
+    background: white;
+    color: var(--text-dark);
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 16px;
+    border: 2px solid var(--text-dark);
+    box-shadow: 4px 4px 0px var(--accent);
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step-num {
+    background: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+.guide-image {
+    flex: 1;
+    min-width: 320px;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 24px;
+    border: 2px solid var(--text-dark);
+    box-shadow: 15px 15px 0px var(--accent);
+    transform: rotate(2deg);
+}
+
+.image-wrapper img {
+    width: 100%;
+    border-radius: 22px;
+    display: block;
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: var(--primary);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid var(--text-dark);
+    transform: rotate(-10deg);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--text-dark);
+}
+
+.footer-brand h3 {
+    font-size: 2rem;
+}
+
+.slogan {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+
+.copyright {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #888;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .btn-primary {
+        padding: 15px 30px;
+    }
+
+    .guide-text h2 {
+        font-size: 2.5rem;
+    }
+    
+    .image-wrapper {
+        transform: rotate(0);
+        margin-top: 2rem;
+    }
+    
+    .floating-badge {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+/* --- Sección Conócenos --- */
+.about-us {
+    background-color: var(--card-bg); /* Fondo blanco para contrastar con la tienda y la guía */
+    padding: 7rem 2rem;
+    border-top: 2px solid var(--text-dark);
+}
+
+.about-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* Contenedor de la Imagen */
+.about-image {
+    flex: 1;
+    min-width: 320px;
+    position: relative;
+}
+
+.image-wrapper-about {
+    position: relative;
+    border-radius: 24px;
+    border: 2px solid var(--text-dark);
+    /* Sombra hacia la izquierda para dar contraste visual con el resto de la página */
+    box-shadow: -15px 15px 0px var(--accent); 
+    overflow: hidden;
+}
+
+.image-wrapper-about img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper-about:hover img {
+    transform: scale(1.05); /* Zoom suave al pasar el mouse */
+}
+
+/* Etiqueta Flotante Estilo Sticker */
+.about-badge {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    background: var(--secondary); /* Verde orgánico */
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--text-dark);
+    border-radius: 8px;
+    transform: rotate(-6deg);
+    box-shadow: 5px 5px 0px var(--text-dark);
+    z-index: 2;
+}
+
+/* Contenedor de Texto */
+.about-text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.about-text h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.about-text h2 span {
+    color: var(--primary); /* El Terracota de Mambrú */
+    font-style: italic;
+}
+
+.about-text p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    color: #4a4a4a;
+}
+
+/* Botón Secundario (Diferente al principal para no saturar) */
+.btn-secondary {
+    display: inline-block;
+    background-color: white;
+    color: var(--text-dark);
+    padding: 16px 40px;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: 2px solid var(--text-dark);
+    border-radius: 50px;
+    box-shadow: 5px 5px 0px var(--secondary);
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.btn-secondary:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px var(--secondary);
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* --- Ajustes Responsive para Móviles --- */
+@media (max-width: 768px) {
+    .about-container {
+        /* Invertimos el orden en móvil para que el texto salga primero y luego la imagen */
+        flex-direction: column-reverse; 
+        gap: 3.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 2.8rem;
+    }
+
+    .image-wrapper-about {
+        box-shadow: -10px 10px 0px var(--accent);
+    }
+    
+    .about-badge {
+        left: -10px;
+        top: 20px;
+    }
+}

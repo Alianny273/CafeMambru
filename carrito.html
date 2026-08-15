@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Mambrú</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logoicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Barra de navegación flotante -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="img/logo.jpeg" alt="Mambrú Logo">
+            <span class="logo-text">Mambrú</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tecnicas.html">Técnicas</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="cart">
+            <button class="btn-cart" style="background-color: var(--primary); color: white;">Carrito (1)</button>
+        </div>
+    </header>
+
+    <!-- Sección del Carrito de Compras -->
+    <section class="shop">
+        <div class="section-header">
+            <h2 class="section-title">Tu <span>Carrito</span></h2>
+            <p class="section-subtitle">Revisa tus productos seleccionados antes de finalizar el pedido.</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+            
+            <!-- Item del Carrito -->
+            <div style="background: var(--card-bg); border: var(--border-brutalist); border-radius: 20px; padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; box-shadow: 6px 6px 0px rgba(226, 114, 91, 0.25);">
+                <div style="display: flex; align-items: center; gap: 1.5rem;">
+                    <img src="img/producto1.jpeg" alt="Café Sofoco" style="width: 80px; height: 80px; object-fit: cover; border-radius: 12px; border: var(--border-brutalist);">
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem;">Café Sofoco</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Edición 002 • Aguadas, Caldas</p>
+                        <span style="font-weight: 700; color: var(--primary);">$38.000</span>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 1.5rem;">
+                    <div style="display: flex; align-items: center; border: var(--border-brutalist); border-radius: 50px; overflow: hidden; background: #fff;">
+                        <button style="background: none; border: none; padding: 8px 14px; font-weight: 700; cursor: pointer;">-</button>
+                        <span style="padding: 0 10px; font-weight: 700;">1</span>
+                        <button style="background: none; border: none; padding: 8px 14px; font-weight: 700; cursor: pointer;">+</button>
+                    </div>
+                    <button style="background: none; border: none; color: #c95d46; font-weight: 700; cursor: pointer; font-size: 0.9rem;">Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Resumen de Compra -->
+            <div style="background: var(--card-bg); border: var(--border-brutalist); border-radius: 20px; padding: 2rem; box-shadow: 8px 8px 0px var(--text-dark);">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 1.1rem;">
+                    <span>Subtotal:</span>
+                    <span style="font-weight: 700;">$38.000</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem; font-size: 1.1rem; border-bottom: 2px dashed #ddd; padding-bottom: 1rem;">
+                    <span>Envío:</span>
+                    <span style="font-weight: 700;">Calculado al pagar</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 2rem; font-size: 1.4rem; font-family: 'Playfair Display', serif; font-weight: 800;">
+                    <span>Total:</span>
+                    <span style="color: var(--primary);">$38.000</span>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="productos.html" class="btn-secondary" style="flex: 1; text-align: center; margin-top: 0;">Seguir comprando</a>
+                    <a href="contacto.html" class="btn-primary" style="flex: 1; text-align: center; margin-top: 0;">Finalizar pedido</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-brand">
+            <img src="img/logo.jpeg" alt="Mambrú" class="footer-logo">
+            <h3>Mambrú</h3>
+        </div>
+        <p class="slogan">Café, Memoria, Territorio, Alma.</p>
+        <p class="copyright">&copy; 2026 Mambrú. Creado con pasión.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mambrú - Café, Memoria, Territorio, Alma</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Barra de navegación flotante -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="Mambrú Logo">
+            <span class="logo-text">Mambrú</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="experiencias.html">experiencias</a>
+            <a href="tecnicas.html">Técnicas</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="cart">
+            <a href="carrito.html" class="btn-cart" style="text-decoration: none; display: inline-block;">Carrito (0)</a>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <a href="productos.html" class="btn-primary">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Marquesina dinámica (Toque Cool/Trendy) -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>☕ CAFÉ DE ESPECIALIDAD</span>
+            <span>🌿 ORIGEN COLOMBIA</span>
+            <span>✨ MEMORIA Y TERRITORIO</span>
+            <span>🔥 TOSTIÓN FRESCA</span>
+            <span>☕ CAFÉ DE ESPECIALIDAD</span>
+            <span>🌿 ORIGEN COLOMBIA</span>
+            <span>✨ MEMORIA Y TERRITORIO</span>
+            <span>🔥 TOSTIÓN FRESCA</span>
+        </div>
+    </div>
+
+    <!-- Sección de Tienda / Productos Preview -->
+    <section id="tienda" class="shop">
+        <div class="section-header">
+            <h2 class="section-title">Nuestra Selección</h2>
+            <p class="section-subtitle">Cafés cultivados con el alma, listos para tu taza.</p>
+        </div>
+        
+        <div class="grid-products">
+            <!-- Producto 1: Sofoco -->
+            <article class="card">
+                <div class="img-container">
+                    <img src="img/producto1.jpeg" alt="Café Sofoco - Mambrú">
+                    <span class="badge badge-orange">Edición 002</span>
+                </div>
+                <div class="card-info">
+                    <h3>Sofoco</h3>
+                    <p class="origin">📍 Aguadas, Caldas</p>
+                    <p class="notes">Notas: Amarillo, caramelo y panela.</p>
+                    <div class="card-footer">
+                        <span class="price">$38.000</span>
+                        <button class="btn-add">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 2: Encuentro -->
+            <article class="card">
+                <div class="img-container">
+                    <img src="img/product3.jpeg" alt="Café Encuentro - Mambrú">
+                    <span class="badge badge-blue">Especial</span>
+                </div>
+                <div class="card-info">
+                    <h3>Encuentro</h3>
+                    <p class="origin">📍 Jardín, Antioquia</p>
+                    <p class="notes">Proceso: Lavado tradicional.</p>
+                    <div class="card-footer">
+                        <span class="price">$38.000</span>
+                        <button class="btn-add">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 3: Prensa Francesa -->
+            <article class="card">
+                <div class="img-container placeholder-img">
+                    <img src="img/prensa.jpg" alt="Prensa Francesa">
+                    <span class="badge badge-dark">Accesorio</span>
+                </div>
+                <div class="card-info">
+                    <h3>Prensa Francesa</h3>
+                    <p class="origin">⚙️ 600ml / Acero y Vidrio</p>
+                    <p class="notes">El método ideal para resaltar el cuerpo de tu café.</p>
+                    <div class="card-footer">
+                        <span class="price">$75.000</span>
+                        <button class="btn-add">+</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Nuevo Preview de Servicios en el Index -->
+    <section id="servicios-preview" class="shop" style="background-color: rgba(0,0,0,0.02);">
+        <div class="section-header">
+            <h2 class="section-title">Experiencias Mambrú</h2>
+            <p class="section-subtitle">Un vistazo a nuestros talleres, actividades sensoriales y catas exclusivas.</p>
+        </div>
+        
+        <div class="grid-products">
+            <article class="card">
+                <div class="img-container">
+                    <img src="img/pareja.jpeg" alt="Actividades sensoriales y talleres para niños con café y chocolate">
+                    <span class="badge badge-orange">Familiar</span>
+                </div>
+                <div class="card-info">
+                    <h3>Talleres Infantiles</h3>
+                    <p class="origin">🎈 Niños y Chocolate</p>
+                    <p class="notes">Actividades sensoriales creativas y divertidas con café y chocolate.</p>
+                    <div class="card-footer">
+                        <span class="price">Experiencia</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="img-container">
+                    <img src="img/tecnica.jpeg" alt="Talleres para aprender de café">
+                    <span class="badge badge-blue">Educativo</span>
+                </div>
+                <div class="card-info">
+                    <h3>Talleres de Café</h3>
+                    <p class="origin">📚 Cultura y Procesos</p>
+                    <p class="notes">Espacios educativos para dominar características, aromas y preparación.</p>
+                    <div class="card-footer">
+                        <span class="price">Aprendizaje</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="img-container placeholder-img">
+                    <img src="img/producto1.jpeg" alt="Catas de café">
+                    <span class="badge badge-dark">Sensorial</span>
+                </div>
+                <div class="card-info">
+                    <h3>Catas de Café</h3>
+                    <p class="origin">✨ Degustación</p>
+                    <p class="notes">Descubre y aprende a identificar matices, aromas y sabores únicos.</p>
+                    <div class="card-footer">
+                        <span class="price">Especial</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="servicios.html" class="btn-primary" style="display: inline-block; text-decoration: none;">Conoce nuestros servicios</a>
+        </div>
+    </section>
+
+    <!-- Sección Conócenos -->
+    <section id="conocenos" class="about-us">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="image-wrapper-about">
+                    <img src="img/pareja.jpeg" alt="Cultivo de Café Mambrú">
+                    <div class="about-badge">Nuestra Raíz</div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>Memoria, Territorio <br>y <span>Alma</span></h2>
+                <p>En Mambrú no solo tostamos granos; rescatamos la tradición de nuestras montañas. Cada taza es un viaje directo a los cafetales colombianos, cultivados con respeto por la tierra y pasión por nuestra gente.</p>
+                <p>Somos una marca joven y parchada, pero con un respeto absoluto por el café de especialidad. Sin rodeos, puro sabor.</p>
+                <a href="conocenos.html" class="btn-secondary">Prueba nuestra historia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Preparación -->
+    <section id="preparacion" class="prep-guide">
+        <div class="guide-container">
+            <div class="guide-text">
+                <h2>La Receta <br><span>Perfecta</span></h2>
+                <p>Para extraer el alma de nuestro café, te recomendamos la proporción ideal. Usa una gramera para ser un verdadero barista en casa.</p>
+                <ul class="steps">
+                    <li><span class="step-num">01</span> Mide 2 cucharadas grandes colmadas.</li>
+                    <li><span class="step-num">02</span> Esto equivale a aprox. <strong>20 gramos</strong> de café.</li>
+                    <li><span class="step-num">03</span> Vierte agua caliente (92°C) y disfruta.</li>
+                </ul>
+            </div>
+            <div class="guide-image">
+                <div class="image-wrapper">
+                    <img src="img/tecnica.jpeg" alt="Guía de 20 gramos en balanza">
+                    <div class="floating-badge">¡Sabor WOW!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="img/logo.jpeg" alt="Mambrú" class="footer-logo">
+                <h3>Mambrú</h3>
+            </div>
+            <p class="slogan">Café, Memoria, Territorio, Alma.</p>
+            <p class="copyright">&copy; 2026 Mambrú. Creado con pasión.</p>
+        </div>
+    </footer>
+</body>
+</html>
