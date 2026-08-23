@@ -28,26 +28,38 @@
         </div>
     </header>
 
-    <section class="prep-guide" style="padding-top: 140px;">
+   <section class="prep-guide" style="padding-top: 140px; padding-bottom: 60px;">
+        
+        <!-- 1. Título y texto centrados: Usamos la clase 'guide-text' para no perder tus estilos de CSS -->
+        <div class="guide-text" style="width: 100%; max-width: 100%; text-align: center; margin-bottom: 40px;">
+            <h2 style="text-align: center;">Preparación en <br><span>Prensa Francesa</span></h2>
+            <p style="max-width: 700px; margin: 0 auto; text-align: center;">Sigue estos pasos paso a paso para lograr una extracción perfecta y conservar todos los aromas de nuestro café:</p>
+        </div>
+
+        <!-- 2. Contenedor original de dos columnas (Pasos y Video) -->
         <div class="guide-container">
+            
+            <!-- Columna Izquierda: Pasos con tu estilo original -->
             <div class="guide-text">
-                <h2>La Receta <br><span>Perfecta</span></h2>
-                <p>Para extraer el alma nuestro café, te recomendamos la proporción ideal. Usa una gramera para ser un verdadero barista en casa.</p>
                 <ul class="steps">
-                    <li><span class="step-num">01</span> Mide 2 cucharadas grandes colmadas.</li>
-                    <li><span class="step-num">02</span> Esto equivale a aprox. <strong>20 gramos</strong> de café.</li>
-                    <li><span class="step-num">03</span> Vierte agua caliente (92°C) y disfruta.</li>
+                    <li><span class="step-num">01</span> <strong>Calentar:</strong> Vierte agua caliente en la prensa vacía para templar el vidrio y desecha esa agua.</li>
+                    <li><span class="step-num">02</span> <strong>Moler:</strong> Muele tus granos justo antes de usarlos para conservar aromas.</li>
+                    <li><span class="step-num">03</span> <strong>Agregar:</strong> Coloca el café molido en el fondo de la prensa.</li>
+                    <li><span class="step-num">04</span> <strong>Verter:</strong> Añade agua a 93°C, asegurándote de mojar todo el café por igual.</li>
+                    <li><span class="step-num">05</span> <strong>Reposar:</strong> Remueve suavemente, pon la tapa sin bajar el émbolo y espera 4 minutos.</li>
+                    <li><span class="step-num">06</span> <strong>Servir:</strong> Baja el émbolo lento y parejo. Sirve de inmediato para no sobreextraer.</li>
                 </ul>
             </div>
-            <div class="guide-image">
-                <div class="image-wrapper">
-                    <img src="img/tecnica.jpeg" alt="Guía de 20 gramos en balanza">
-                    <div class="floating-badge">¡Sabor WOW!</div>
+            
+            <!-- Columna Derecha: Video aprovechando el contenedor de la imagen -->
+            <div class="guide-image" style="display: flex; align-items: center; justify-content: center;">
+                <div class="image-wrapper" style="width: 100%; padding: 0;">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/_3MlAyoPga8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
                 </div>
             </div>
+            
         </div>
     </section>
-
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
