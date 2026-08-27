@@ -2,4 +2,4 @@
 //Renderizar tarjetas de productos dinámicamente
 //Filtros (por categoría, precio) 
 //Botón "Agregar al carrito" → evento click → guarda en localStorage
-//Feedback visual (toast/alerta "Agregado ✓")
+//Feedback visual (toast/alerta "Agregado ✓").

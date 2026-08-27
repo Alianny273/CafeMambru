@@ -5,4 +5,4 @@
 //enviarPedido(datos) — POST del carrito al backend
 //enviarContacto(datos) — POST del formulario de contacto
 
-//Constante BASE_URL centralizada
+//Constante BASE_URL centralizada.

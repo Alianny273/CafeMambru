@@ -3,4 +3,4 @@
 //Eventos: aumentar/disminuir cantidad, eliminar item, vaciar carrito
 //Calcular y mostrar total
 //Botón "Finalizar compra" → async/await con enviarPedido() de api.js
-//Manejo de estado vacío ("tu carrito está vacío")
+//Manejo de estado vacío ("tu carrito está vacío").
